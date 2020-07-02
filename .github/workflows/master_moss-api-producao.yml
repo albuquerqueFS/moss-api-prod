@@ -31,5 +31,5 @@ jobs:
       with:
         app-name: 'moss-api-producao'
         slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_8709ba559cdc47769d66bb6e3c5ae312 }}
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_d17ccc37acdc417fbbe0121b66c61f9b }}
         package: .
