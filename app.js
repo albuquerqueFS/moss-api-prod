@@ -3,6 +3,7 @@ const app = express();
 const morgan = require("morgan");
 const bodyParser = require('body-parser');
 const axios = require('axios');
+const cors = require('cors');
 
 const connStr = "Server=svrmoss.database.windows.net;Database=BD2ADSA;User Id=mossadmin;Password=#Gfgrupo8;Encrypt=true";
 const sql = require("mssql");
@@ -14,6 +15,7 @@ const eventosRoutes = require('./api/routes/eventos');
 const defineHosts = require('./api/routes/ping');
 const salvarInfo = require('./util');
 
+app.use(cors());
 app.use(morgan("dev"));
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());

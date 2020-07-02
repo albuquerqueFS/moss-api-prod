@@ -60,7 +60,7 @@ function selectHandler(query, endpoint, res) {
             })
         })
         .catch(err => res.status(500).json({
-                message: 'Erro no servidor',
+                message: 'Erro no servidor',    
                 erro: err
             })
         )
